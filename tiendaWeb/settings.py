@@ -76,8 +76,12 @@ WSGI_APPLICATION = 'tiendaWeb.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'tiendaWeb',
+        'USER': 'root',
+        #'PASSWORD': 'tu_contraseña_de_mysql',
+        'HOST': 'localhost',  # O la dirección IP de tu servidor MySQL
+        'PORT': '3306',  # El puerto por defecto de MySQL
     }
 }
 
